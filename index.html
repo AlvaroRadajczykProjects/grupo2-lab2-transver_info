@@ -1,42 +1,6 @@
 <html>
-
-	<head>
-		
-		<style>
-	
-			#tiempo_cd{
-			
-				position: absolute;
-				font: 20px Arial;
-				color: "red";
-				left: 30px;
-				top: 0px;			
-			}
-		
-		</style>
-	
-	</head>
-	
+	<head></head>
 	<body>
-	
-		<script src="js/guarda_tiempo.js"></script>
-		
-		<p id="tiempo_cd"></p>
-		
-		<script>
-
-			var tiempo_cd = document.getElementById("tiempo_cd");
-			tiempo_cd.innerHTML = tiempo[0] + " : " + tiempo[1] + tiempo[2] + " : " + tiempo[3] + tiempo[4].toString().match(/^-?\d+(?:\.\d{0,2})?/);
-
-			function step() {
-
-				tiempo_cd.innerHTML = tiempo[0] + " : " + tiempo[1] + tiempo[2] + " : " + tiempo[3] + tiempo[4].toString().match(/^-?\d+(?:\.\d{0,2})?/);
-				window.requestAnimationFrame(step);
-
-			}window.requestAnimationFrame(step);
-		
-		</script>
-	
+		<p>Hola</p>
 	</body>
-
 </html>
