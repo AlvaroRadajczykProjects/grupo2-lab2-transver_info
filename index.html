@@ -1,0 +1,45 @@
+<html>
+	<head>
+	</head>
+	<body>
+		
+		<script src="resources/includes.js"></script>
+		<script>
+		
+			var body = document.body;
+			body.style.background = "green";
+			//body.style.overflowX = "hidden";
+
+			// new Div( isid, estilo  )
+			
+			var cuerpo = new Grupo( false, var_css_a_estilo( CSS_CUERPO ), {}); cuerpo.setPadre(body); cuerpo.iniciarme(); //cuerpo.yo.style.border = "5px dotted black"
+			
+			cuerpo.annadir( 0, {
+				
+				"cajita": new Objeto( true, "div", var_css_a_estilo( CSS_cajita ) ),
+				"cajita_3": new Objeto( true, "div", var_css_a_estilo( CSS_cajita_3 ) ),
+				
+				
+				"bloque_extra": new Grupo( false, var_css_a_estilo( CSS_bloque ), {
+				
+					"bloque_extra": new Grupo( false, var_css_a_estilo( CSS_bloque_2 ), {}),
+				
+					"cajita_4": new Objeto( true, "div", var_css_a_estilo( CSS_cajita_4 ) ),
+					
+				}),
+				
+				"cajita_2": new Objeto( true, "div", var_css_a_estilo( CSS_cajita_2 ) ),
+			
+			});
+
+			cuerpo.elem("bloque_extra").annadir( 2, {
+			
+				"cajita": new Objeto( true, "div", var_css_a_estilo( CSS_cajita ) ),
+				"cajita_3": new Objeto( true, "div", var_css_a_estilo( CSS_cajita_3 ) ),
+				"cajita_2": new Objeto( true, "div", var_css_a_estilo( CSS_cajita_2 ) ),
+
+			});
+			
+		</script>
+	</body>
+</html>
